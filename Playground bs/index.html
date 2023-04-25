@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>Playground Bootstrap 5.3</title>
+</head>
+<body>   
+    
+    <div class="layout d-flex flex-column align-items-center text-white">
+      <header class="bg-dark col-12">
+        <nav class="container navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img class="logo" src="./assets/images/logo.png" alt="Logo">
+            </a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Agents</a>
+                </li>
+
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="flex-grow-1 container py-2">
+        <section class="contenedor-carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <h2 class="text-white position-absolute top-50 start-50 translate-middle z-1 p-3 rounded">Home</h2>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/BWOHC2V6OBFJRDW3NE6WCUKSSA.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://static1-es.millenium.gg/articles/3/42/28/3/@/219926-sage-valorant-article_cover_bd-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://static1-es.millenium.gg/articles/4/51/09/4/@/283132-valorant-reyna-leer-1-article_cover_bd-2.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <section class="mt-4 d-flex flex-wrap justify-content-center gap-3">
+          <h2 class="text-dark text-center col-12"> Agentes</h2>
+
+          <article class="card col-10 col-md-5 col-lg-4 col-xl-3">
+            <img src="./assets/images/jett.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jett</h5>
+              <p class="card-text text-secondary">Duelist</p>
+              <p class="card-text">Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies up before they even know what hit them.</p>
+            </div>
+          </article>
+
+          <article class="card col-10 col-md-5 col-lg-4 col-xl-3">
+            <img src="./assets/images/phoenix.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Phoenix</h5>
+              <p class="card-text text-secondary">Duelist</p>
+              <p class="card-text">Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he's rushing in to fight on his own terms.</p>
+            </div>
+          </article>
+
+          <article class="card col-10 col-md-5 col-lg-4 col-xl-3">
+            <img src="./assets/images/sage.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sage</h5>
+              <p class="card-text text-secondary">Sentinel</p>
+              <p class="card-text">The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off forceful assaults, she provides a calm center to a hellish battlefield.</p>
+            </div>
+          </article>
+
+          <article class="card col-10 col-md-5 col-lg-4 col-xl-3">
+            <img src="./assets/images/sova.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sova</h5>
+              <p class="card-text text-secondary">Initiator</p>
+              <p class="card-text">Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.</p>
+            </div>
+          </article>
+
+          <article class="card col-10 col-md-5 col-lg-4 col-xl-3">
+            <img src="./assets/images/brim.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Brimstone</h5>
+              <p class="card-text text-secondary">Controller</p>
+              <p class="card-text">Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.</p>
+            </div>
+          </article>
+
+        
+        </section>
+      </main>
+      <footer class="vh10 col-12 bg-dark d-flex justify-content-center align-items-center">
+        <p>Mindhub CH47 | Nicolás</p>
+      </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

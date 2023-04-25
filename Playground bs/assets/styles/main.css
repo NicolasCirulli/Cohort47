@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.layout{
+    min-height: 100vh !important;
+}
+.vh10{
+    height: 10vh !important;
+}
+.logo{
+    width: 40px !important;
+}
+
+.carousel-item img{
+    width: 100% !important;
+    height: 400px !important;
+    object-fit: cover;
+    object-position: center 10%;
+}
+.contenedor-carousel{
+    position: relative !important;
+}
+.contenedor-carousel h2{
+    background-color: rgba(0, 0, 0, 0.655);
+    font-size: 4rem;
+}

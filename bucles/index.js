@@ -103,4 +103,3 @@ const mentoresQueSabenNode = filtroPorTec( mentores, 'NodeJS' )
 const mentoresQueSabenJava = filtroPorTec( mentores, 'Java' )
 
 const mentoresModuloJS = filtroPorModulo(  mentores, 'WeB' )
-console.log( mentoresModuloJS )

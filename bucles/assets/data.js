@@ -13,7 +13,7 @@ const mentores = [
     },
     {
         nombre: 'Flor',
-        edad: 32,
+        edad: 22,
         tecnologias: ['HTML','CSS','JavaScript', 'VueJS'],
         modulo: 'WEB'
     },
@@ -28,6 +28,12 @@ const mentores = [
         edad: 27,
         tecnologias: ['HTML','CSS','JavaScript', 'NodeJS', 'ReactJS', 'React Native'],
         modulo: 'JS'
+    },
+    {
+        nombre: '',
+        edad: 30,
+        tecnologias: ['JavaScript','Java', 'VueJS','NodeJS'],
+        modulo: 'Nuevo'
     },
     {
         nombre: 'Federico',
@@ -59,4 +65,5 @@ const mentores = [
         tecnologias: ['JavaScript','Java', 'VueJS','NodeJS'],
         modulo: 'JAVA'
     },
+    
 ]

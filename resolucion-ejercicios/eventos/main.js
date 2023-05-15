@@ -122,21 +122,22 @@ function pintarArticles( notas, contenedor ){
     contenedor.innerHTML = template
 }
 
-function crearArticle(nota) {
+function crearArticle( nota ) {
+    const { realizada, id, titulo, descripcion } = nota
     let estado = ''
-    if( nota.realizada ){
+    if( realizada ){
         estado = 'checked'
     }
     return `<article class="card col-3">
                 <header class="card-header">
                     <div class="form-check">
-                        <input class="form-check-input" data-accion="estado" data-id="${nota.id}" type="checkbox" ${estado} value="" id="">
-                        ${nota.titulo}
+                        <input class="form-check-input" data-accion="estado" data-id="${id}" type="checkbox" ${estado} value="" id="">
+                        ${titulo}
                     </div>
                 </header>
-                <main class="card-body"> <p> ${nota.descripcion} </p> </main>
+                <main class="card-body"> <p> ${descripcion} </p> </main>
                 <footer class="card-footer d-flex justify-content-center">
-                    <button class="btn btn-danger" data-accion="borrar" data-id="${nota.id}">Borrar nota</button>
+                    <button class="btn btn-danger" data-accion="borrar" data-id="${id}">Borrar nota</button>
                 </footer>
             </article>
 `

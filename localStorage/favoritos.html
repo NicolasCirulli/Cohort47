@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="https://mindhubweb.com/favicon.ico" type="image/x-icon">
+    <title>Vue</title>
+</head>
+<body class="container bg-secondary d-flex flex-column">
+    <div id="app"> 
+        {{ filtroCruzado }}
+    <header class="mt-5">
+        <nav class="navbar navbar-expand-lg bg-light rounded">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Personajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Favoritos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <h1 class="text-center fw-bold text-white">Favoritos</h1>
+    </header>
+    <main class="mt-5 d-flex flex-wrap gap-5 justify-content-center" id="cont-personajes">
+
+        <template v-if="personajesFavoritos.length > 0" v-for="personaje of personajesFavoritos">
+            <div class="card col-3">
+                <img v-bind:src="personaje.image || 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/08/harry-potter-escuela-hogwarts.jpg?tf=3840x'" class="card-img-top" :alt="personaje.name">
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-3">{{personaje.name}}</h5>
+                    <h4 class="fs-5">{{personaje.house}}</h4>
+                </div>
+            </div>
+        </template>
+        <template v-else>
+            <div >
+                <h1 class="text-white">No hay personajes</h1>
+            </div>
+        </template>
+        
+
+    </main>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./favoritos.js"></script>
+</body>
+</html>
